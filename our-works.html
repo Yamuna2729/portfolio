@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <title>Naga Venkata Kumar</title>
+
+    <meta name="description" content="Explore the creative portfolio of Naga Venkata Kumar – software projects, web designs, cinematic edits, posters, UI/UX, and professional design works.">
+    <meta name="keywords" content="portfolio, projects, web design, video editing, poster design, software development, UI/UX design">
+    <meta name="theme-color" content="#8b5cf6">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="assets/my-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+    <div class="loader-spinner"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html" aria-label="Home">
+                <img src="assets/profile/logo.png" alt="Naga Venkata Kumar Logo" class="logo-img">
+            </a>
+            
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="our-works.html">Our Works</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="nav-contact-btn">Contact</a>
+        </div>
+
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <button class="mobile-menu-close" onclick="toggleMenu()">
+    <i data-lucide="x"></i>
+</button>
+
+        <a href="index.html#home" onclick="toggleMenu()">Home</a>
+        <a href="about.html">About</a>
+        <a href="our-works.html">Our Works</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- Works Hero -->
+<section class="works-hero">
+    <div class="works-hero-content">
+        <h1>Our <span class="gradient-text">Works</span></h1>
+        <p>A comprehensive showcase of creative projects – web designs, software solutions, video edits, posters, and UI screens</p>
+    </div>
+</section>
+
+<!-- Filter Tabs -->
+<section class="works-filter-section">
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterWorks('all')">All Projects</button>
+        <button class="filter-btn" onclick="filterWorks('web')">Web Design</button>
+        <button class="filter-btn" onclick="filterWorks('video')">Video Editing</button>
+        <button class="filter-btn" onclick="filterWorks('design')">Poster Design</button>
+        <button class="filter-btn" onclick="filterWorks('ui')">UI/UX</button>
+        <button class="filter-btn" onclick="filterWorks('software')">Software</button>
+    </div>
+</section>
+
+<!-- Works Grid -->
+<section class="works-grid-section">
+    <div class="works-grid">
+        <!-- Video Editing Works -->
+        <div class="work-item" data-category="video">
+            <img src="assets/" alt="Cinematic Video Edit Project 1" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Cinematic Edit</h3>
+                    <p>Professional Video Editing</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="design">
+            <img src="assets/g2.jpg" alt="Creative Poster Design 1" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Brand Poster</h3>
+                    <p>Graphic Design</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="ui">
+            <img src="assets/g3.jpg" alt="UI/UX Design Project 1" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Mobile UI</h3>
+                    <p>UI/UX Design</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="web">
+            <img src="assets/g4.jpg" alt="Web Design Project 1" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Portfolio Website</h3>
+                    <p>Web Design & Development</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="video">
+            <img src="assets/g5.jpg" alt="Motion Graphics Project" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Motion Graphics</h3>
+                    <p>After Effects Animation</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="design">
+            <img src="assets/g6.jpg" alt="Event Poster Design" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Event Poster</h3>
+                    <p>Digital Design</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="software">
+            <img src="assets/g7.jpg" alt="Software Project 1" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Web Application</h3>
+                    <p>Full Stack Development</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="ui">
+            <img src="assets/g8.jpg" alt="Dashboard UI Design" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Dashboard UI</h3>
+                    <p>Interface Design</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more projects as needed - unlimited scalability -->
+        <div class="work-item" data-category="video">
+            <img src="assets/slider1.webp" alt="Commercial Video Edit" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Commercial Ad</h3>
+                    <p>Video Production</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="web">
+            <img src="assets/slider2.webp" alt="E-commerce Website" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>E-commerce Site</h3>
+                    <p>Web Development</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="design">
+            <img src="assets/slider3.webp" alt="Social Media Poster" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Social Media</h3>
+                    <p>Poster Design</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="ui">
+            <img src="assets/slider4.webp" alt="App Interface Design" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>App Interface</h3>
+                    <p>UI Design</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="video">
+            <img src="assets/slider5.webp" alt="Documentary Edit" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Documentary</h3>
+                    <p>Video Editing</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="software">
+            <img src="assets/g1.jpg" alt="Python Application" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Python App</h3>
+                    <p>Software Development</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="web">
+            <img src="assets/g2.jpg" alt="Landing Page Design" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Landing Page</h3>
+                    <p>Web Design</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-item" data-category="design">
+            <img src="assets/g3.jpg" alt="Brand Identity Poster" loading="lazy">
+            <div class="work-overlay" onclick="openLightbox(this)">
+                <div class="work-details">
+                    <h3>Brand Identity</h3>
+                    <p>Graphic Design</p>
+                    <i data-lucide="zoom-in"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- You can add unlimited more items here -->
+    </div>
+
+    <!-- Load More Button -->
+    <div class="load-more-container">
+        <button class="btn-primary" onclick="loadMoreWorks()">
+            <i data-lucide="plus-circle"></i>
+            Load More Projects
+        </button>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox hidden">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">
+        <i data-lucide="x"></i>
+    </button>
+    <img id="lightbox-img" src="" alt="Enlarged view">
+    <div class="lightbox-info">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-description"></p>
+    </div>
+    <a id="download-img" class="lightbox-download" href="#" download>
+        <i data-lucide="download"></i>
+        Download
+    </a>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About</h4>
+                <p>Ch. Naga Venkata Kumar is a creative video editor and responsive web designer who crafts engaging visual stories and user-friendly websites, bringing strong leadership, responsibility, and continuous learning into every project.
+</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_kumar___777" target="_blank" rel="noopener noreferrer"><i data-lucide="instagram"></i></a>
+                    <a href="https://youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer"><i data-lucide="youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/chembeti-naga-venkata-kumar-018344367/" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="our-works.html">Our Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Expertise</h4>
+                <ul>
+                    <li><a href="contact.html">Software Development</a></li>
+                    <li><a href="contact.html">Web Design</a></li>
+                    <li><a href="contact.html">Video Editing</a></li>
+                    <li><a href="contact.html">Poster Design</a></li>
+                    <li><a href="contact.html">UI/UX Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i data-lucide="phone"></i><a href="tel:+916281451401">+91 6281451401</a></li>
+                    <li><i data-lucide="mail"></i><a href="mailto:nagavenkatakumar1401@gmail.com">nagavenkatakumar1401@gmail.com</a></li>
+                    <li><i data-lucide="map-pin"></i><span>Andhra Pradesh, India</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Naga Venkata Kumar © 2026 All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

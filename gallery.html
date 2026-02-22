@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <title>Naga Venkata Kumar</title>
+
+    <meta name="description" content="Explore the creative portfolio of Naga Venkata Kumar – software projects, web designs, cinematic edits, posters, UI/UX, and professional design works.">
+    <meta name="keywords" content="portfolio, projects, web design, video editing, poster design, software development, UI/UX design">
+    <meta name="theme-color" content="#8b5cf6">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="assets/my-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+    <div class="loader-spinner"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html" aria-label="Home">
+                <img src="assets/profile/logo.png" alt="Naga Venkata Kumar Logo" class="logo-img">
+            </a>
+            
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="our-works.html">Our Works</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="nav-contact-btn">Contact</a>
+        </div>
+
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <button class="mobile-menu-close" onclick="toggleMenu()">
+    <i data-lucide="x"></i>
+</button>
+
+        <a href="index.html#home" onclick="toggleMenu()">Home</a>
+        <a href="about.html">About</a>
+        <a href="our-works.html">Our Works</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+<!-- Gallery Hero -->
+<section class="gallery-hero">
+    <h1>Photo <span class="gradient-text">Gallery</span></h1>
+    <p>Each photo represents my vision, emotion, and attention to detail in every captured moment.</p>
+</section>
+
+<!-- Gallery Filter -->
+<section class="gallery-filter">
+    <button class="gallery-btn active" onclick="filterGallery('all', this)">All</button>
+    <button class="gallery-btn" onclick="filterGallery('atoms', this)">Atoms</button>
+    <button class="gallery-btn" onclick="filterGallery('college', this)">College</button>
+    <button class="gallery-btn" onclick="filterGallery('trips', this)">Trips</button>
+</section>
+
+
+<!-- Gallery Grid -->
+<section class="gallery-grid" id="galleryGrid">
+
+    <div class="gallery-item atoms">
+        <img src="assets/gallery/atoms/DSC00001.JPG">
+    </div>
+
+    <div class="gallery-item atoms">
+        <img src="assets/gallery/atoms/DSC00002.JPG">
+    </div>
+
+    <div class="gallery-item college">
+        <img src="assets/gallery/all/2.webp">
+    </div>
+
+    <div class="gallery-item trips">
+        <img src="assets/gallery/all/6.webp">
+    </div>
+
+    <div class="gallery-item trips">
+        <img src="assets/gallery/all/5.webp">
+    </div>
+
+    <div class="gallery-item trips">
+        <img src="assets/gallery/all/5.webp">
+    </div>
+
+    <div class="gallery-item trips">
+        <img src="assets/gallery/all/5.webp">
+    </div>
+
+    <div class="gallery-item trips">
+        <img src="assets/gallery/all/5.webp">
+    </div>
+
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About</h4>
+                <p>Ch. Naga Venkata Kumar is a creative video editor and responsive web designer who crafts engaging visual stories and user-friendly websites, bringing strong leadership, responsibility, and continuous learning into every project.
+</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_kumar___777" target="_blank" rel="noopener noreferrer"><i data-lucide="instagram"></i></a>
+                    <a href="https://youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer"><i data-lucide="youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/chembeti-naga-venkata-kumar-018344367/" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="our-works.html">Our Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Expertise</h4>
+                <ul>
+                    <li><a href="contact.html">Software Development</a></li>
+                    <li><a href="contact.html">Web Design</a></li>
+                    <li><a href="contact.html">Video Editing</a></li>
+                    <li><a href="contact.html">Poster Design</a></li>
+                    <li><a href="contact.html">UI/UX Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i data-lucide="phone"></i><a href="tel:+916281451401">+91 6281451401</a></li>
+                    <li><i data-lucide="mail"></i><a href="mailto:nagavenkatakumar1401@gmail.com">nagavenkatakumar1401@gmail.com</a></li>
+                    <li><i data-lucide="map-pin"></i><span>Andhra Pradesh, India</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Naga Venkata Kumar © 2026 All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

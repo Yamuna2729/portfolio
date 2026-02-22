@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <title>Naga Venkata Kumar </title>
+
+    <meta name="description" content="Learn more about Ch. Naga Venkata Kumar – Software Developer, Web Designer, Video Editor, and Creative Professional.">
+    <meta name="keywords" content="about, software developer, web designer, video editor, IT student, KHIT">
+    <meta name="theme-color" content="#8b5cf6">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="assets/my-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Page Loader -->
+<div id="page-loader">
+    <div class="loader-spinner"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html" aria-label="Home">
+                <img src="assets/profile/logo.png" alt="Naga Venkata Kumar Logo" class="logo-img">
+            </a>
+            
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="our-works.html">Our Works</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="nav-contact-btn">Contact</a>
+        </div>
+
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu hidden">
+        <button class="mobile-menu-close" onclick="toggleMenu()">
+    <i data-lucide="x"></i>
+</button>
+
+        <a href="index.html#home" onclick="toggleMenu()">Home</a>
+        <a href="about.html">About</a>
+        <a href="our-works.html">Our Works</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+<br>
+<!-- About Hero -->
+<section class="about-hero">
+    <div class="about-hero-content">
+        <h1>About <span class="gradient-text">Me</span></h1>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about-content-section">
+    <div class="about-container">
+        <div class="about-image">
+            <div class="image-glow"></div>
+            <img src="assets/profile/venkat.webp" alt="Naga Venkata Kumar" loading="lazy">
+        </div>
+
+        <div class="about-text">
+            <h2>Hi, I'm <span class="gradient-text">Ch. Naga Venkata Kumar</span> 👋</h2>
+            <p>
+              I am a video editor who loves turning ideas into engaging visual stories. I focus on clean cuts, good timing, and clear messaging to create videos that connect with people.
+</p>
+<p>I also design and build responsive websites that are simple, structured, and easy to use across all devices while continuously improving my technical skills.
+
+
+            </p>
+            <p>
+                With leadership experience as <strong>ITFT Chairman</strong> and <strong>Sankalp Coordinator</strong>, 
+                I combine creativity, technical skill, and team management to deliver polished and engaging work.
+            </p>
+            <button class="btn-secondary know-more-btn" onclick="openAboutModal()">
+    <i data-lucide="user"></i>
+    Know More
+</button>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT MODAL POPUP -->
+<div id="aboutModal" class="about-modal hidden">
+
+    <div class="about-modal-box">
+
+        <button class="about-close" onclick="closeAboutModal()">
+            <i data-lucide="x"></i>
+        </button>
+
+        <h2 class="gradient-text">Chembeti Naga Venkata Kumar</h2>
+
+        <div class="about-modal-content">
+
+            <h3>Professional Summary</h3>
+            <p>
+               <ul>
+                 <li>I am a creative professional specializing in video production with a strong focus on storytelling and audience engagement. I enjoy transforming concepts into compelling visual narratives by combining timing, emotion, and structure to deliver meaningful content. Alongside content creation, I design and develop highly responsive websites that provide smooth performance across all devices. I focus on clarity, usability, and clean structure to ensure every digital experience is both functional and visually appealing.</li>
+                <br>
+                <li>In addition to my technical and creative strengths, I possess strong leadership qualities and the confidence to guide and manage large groups effectively.I approach responsibilities with professionalism, patience, and strategic thinking, ensuring both creative excellence and organized execution in every project I undertake.
+               </ul>
+            </p>
+
+            <h3>Leadership Experience</h3>
+            <ul>
+                <li>ITFT Chairman — Led departmental technical initiatives</li>
+                <li>Tech Lead — We Are With You Charitable Trust</li>
+                <li>Sankalp Coordinator — Managed college events & teams</li>
+            </ul>
+
+            <h3>What I Do</h3>
+            <ul>
+                <li>Video Editing & Motion Graphics</li>
+                <li>Poster & Branding Design</li>
+                <li>Web Applications Development</li>
+                <li>Portfolio & Business Websites</li>
+                <li>UI/UX Design</li>
+                
+                
+            </ul>
+
+            <h3>Career Objective</h3>
+            <p>
+                To build a professional career as a Video Editor and Web Designer where I can use my storytelling creativity and technical skills to produce meaningful digital content and responsive web solutions. I aim to continuously learn new tools and techniques, improve my problem-solving ability, and contribute quality work that supports the growth of the organization while also developing my leadership and professional capabilities.
+
+                <br>
+                <br>
+                I aim to become a full-stack developer and creative technologist,
+                working on innovative products, startups, and digital media platforms
+                that create real-world impact.
+            </p>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Education Timeline -->
+<section class="timeline-section">
+    <div class="section-header">
+        <h2 class="section-title">Education & <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">My academic journey and professional growth</p>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2019 – 2020</div>
+                <h3>SSC (Secondary School Certificate)</h3>
+                <p class="timeline-institute">St. Luke's School</p>
+                <p class="timeline-grade">CGPA: 6.9/10</p>
+                <p>Completed secondary education with focus on science and mathematics.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2020 – 2022</div>
+                <h3>Intermediate (MPC)</h3>
+                <p class="timeline-institute">Sri Chaitanya Junior College</p>
+                <p class="timeline-grade">CGPA: 7.03/10</p>
+                <p>Studied Mathematics, Physics, and Chemistry, building strong analytical foundations.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2022 – 2026</div>
+                <h3>B.Tech in Information Technology</h3>
+                <p class="timeline-institute">kallam haranadhareddy institute of technology (KHIT)</p>
+                <p class="timeline-grade">CGPA: 7.6/10</p>
+                <p>Currently pursuing degree with specialization in IT, focusing on software development, UI/UX design, and creative technologies.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2023</div>
+                <h3>Samkalp Coordinator</h3>
+                <p class="timeline-institute">KHIT</p>
+                <p>Handled organizing and communication responsibilities for college events. Coordinated with multiple teams and managed event logistics.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2025</div>
+                <h3>ITFT Chairman</h3>
+                <p class="timeline-institute">KHIT - IT Department</p>
+                <p>Led IT department technical and creative operations. Managed team projects, organized tech events, and mentored junior students.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2025</div>
+                <h3>Sankalp tech lead</h3>
+                <p class="timeline-institute">We Are With You Charitable Trust</p>
+                <p>Tech Head at We Are With You Charitable Trust — directed technical operations, event coordination, and digital support for community outreach programs.</p>
+            </div>
+        </div>
+    </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2026</div>
+                <h3>Video Editor</h3>
+                <p class="timeline-institute">Atoms digital solutions</p>
+                <p>At Atoms Digital Solutions, I developed practical skills in video editing, including cutting, color correction, audio synchronization, transitions, and basic motion graphics, while working with real client projects and deadlines.</p>
+            </div>
+        </div>
+       
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section">
+    <div class="section-header">
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+    </div>
+
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3><i data-lucide="code"></i> Programming Languages</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML/CSS</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i data-lucide="brain"></i> Core Concepts</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Algorithms</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i data-lucide="tool"></i> Development Tools</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">PyCharm</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i data-lucide="video"></i> Video Editing</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Premiere Pro</span>
+                <span class="skill-tag">After Effects</span>
+                <span class="skill-tag">DaVinci Resolve</span>
+                <span class="skill-tag">Final Cut Pro</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i data-lucide="palette"></i> Design Tools</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">Illustrator</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Blender</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Download - Moved before certificates -->
+<section class="resume-section">
+    <div class="resume-card">
+        <div class="resume-content">
+            <i data-lucide="file-text"></i>
+            <div>
+                <h3>Download My Resume</h3>
+                <p>Get detailed information about my experience and skills</p>
+            </div>
+        </div>
+   <div class="resume-buttons">
+
+    <!-- VIEW BUTTON -->
+    <a href="assets/resume.pdf" target="_blank" class="btn-secondary">
+        <i data-lucide="eye"></i>
+        View Resume
+    </a>
+
+    <!-- DOWNLOAD BUTTON (existing) -->
+    <a href="assets/resume.pdf" download="Naga_Kumar_Resume.pdf" class="btn-primary">
+        <i data-lucide="download"></i>
+        Download Resume
+    </a>
+
+</div>
+    </div>
+</section>
+
+<!-- Certifications Section - Download buttons below -->
+<section class="certifications-section">
+    <div class="section-header">
+        <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
+        <p class="section-subtitle">Professional certifications and accomplishments</p>
+    </div>
+
+    <div class="certifications-grid">
+      <div class="cert-card">
+            <div class="cert-image">
+                <img src="assets/certification/pr.jpg" alt="premiere pro" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h3>Premiere Pro</h3>
+                <p>Certified Video Editor</p>
+    <div class="cert-buttons">
+
+    <!-- VIEW -->
+    <a href="assets/certification/pr.jpg" target="_blank" class="cert-view-btn">
+        <i data-lucide="eye"></i>
+        View
+    </a>
+    <!-- DOWNLOAD -->
+    <a href="assets/certification/pr.jpg" download="Premiere_Pro_Naga_Kumar.pdf" class="cert-download-btn">
+        <i data-lucide="download"></i>
+        Download
+    </a>
+    </div>
+
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-image">
+                <img src="assets/certification/CAD.jpeg" alt="ServiceNow System Developer" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h3>ServiceNow – System Developer</h3>
+                <p>Certified System Developer</p>
+    <div class="cert-buttons">
+
+    <!-- VIEW -->
+    <a href="assets/certification/CAD.jpeg" target="_blank" class="cert-view-btn">
+        <i data-lucide="eye"></i>
+        View
+    </a>
+    <!-- DOWNLOAD -->
+    <a href="assets/certification/ServiceNowCAD.pdf" download="ServiceNow_CAD_Naga_Kumar.pdf" class="cert-download-btn">
+        <i data-lucide="download"></i>
+        Download
+    </a>
+    </div>
+
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-image">
+                <img src="assets/certification/CSA.png" alt="ServiceNow System Admin" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h3>ServiceNow – System Administrator</h3>
+                <p>Certified System Administrator</p>
+                  <div class="cert-buttons">
+
+    <!-- VIEW -->
+    <a href="assets/certification/ServiceNowCSA.pdf" target="_blank" class="cert-view-btn">
+        <i data-lucide="eye"></i>
+        View
+    </a>
+    <!-- DOWNLOAD -->
+    <a href="assets/certification/ServiceNowCSA.pdf" download="ServiceNow_CSA_Naga_Kumar.pdf" class="cert-download-btn">
+        <i data-lucide="download"></i>
+        Download
+    </a>
+    </div>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-image">
+                <img src="assets/certification/sankalp 7 th.jpeg" alt="leadership" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h3>Sankalp – Tech lead</h3>
+                <p>Event Head 2026</p>
+                   <div class="cert-buttons">
+
+    <!-- VIEW -->
+    <a href="assets/certification/sankalp 7 th.jpeg" target="_blank" class="cert-view-btn">
+        <i data-lucide="eye"></i>
+        View
+    </a>
+    <!-- DOWNLOAD -->
+    <a href="assets/certification/sankalp 7 th.pdf" download="Sankalp_7th_Naga_Kumar.pdf" class="cert-download-btn">
+        <i data-lucide="download"></i>
+        Download
+    </a>
+    </div>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-image">
+                <img src="assets/certification/cisco networking.jpeg" alt="CISCO Networking" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h3>CISCO Networking</h3>
+                <p>Networking Fundamentals & Protocols</p>
+                 <div class="cert-buttons">
+
+    <!-- VIEW -->
+    <a href="assets/certification/cisco networking.jpeg" target="_blank" class="cert-view-btn">
+        <i data-lucide="eye"></i>
+        View
+    </a>
+    <!-- DOWNLOAD -->
+    <a href="assets/certification/cisco networking.pdf" download="CISCO_Networking_Naga_Kumar.pdf" class="cert-download-btn">
+        <i data-lucide="download"></i>
+        Download
+    </a>
+    </div>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-image">
+                <img src="assets/certification/salesforce.jpeg" alt="Salesforce Training" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h3>Salesforce Training</h3>
+                <p>Superset badge</p>
+              <div class="cert-buttons">
+
+    <!-- VIEW -->
+    <a href="assets/certification/salesforce.jpeg" target="_blank" class="cert-view-btn">
+        <i data-lucide="eye"></i>
+        View
+    </a>
+    <!-- DOWNLOAD -->
+    <a href="assets/certification/sale force.pdf" download="Salesforce_Training_Naga_Kumar.pdf" class="cert-download-btn">
+        <i data-lucide="download"></i>
+        Download
+    </a>
+    </div>
+            </div>
+        </div>
+
+         <div class="cert-card">
+            <div class="cert-image">
+                <img src="assets/certification/rvr.jpeg" alt="RVR & JC" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h3>CIS'SOIREE - 2024</h3>
+                <p>Participation Certificate</p>
+                  <div class="cert-buttons">
+
+    <!-- VIEW -->
+    <a href="assets/certification/rvr.jpeg" target="_blank" class="cert-view-btn">
+        <i data-lucide="eye"></i>
+        View
+    </a>
+    <!-- DOWNLOAD -->
+    <a href="assets/certification/brain teaser participation certificate.pdf" download="CIS_SOIREE_2024_Naga_Kumar.pdf" class="cert-download-btn">
+        <i data-lucide="download"></i>
+        Download
+    </a>
+    </div>
+            </div>
+        </div>
+
+         <div class="cert-card">
+            <div class="cert-image">
+                <img src="assets/certification/code py.jpeg" alt="Code Py" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h3>Code Python</h3>
+                <p>Python Programming</p>
+                  <div class="cert-buttons">
+
+    <!-- VIEW -->
+    <a href="assets/certification/code py.jpeg" target="_blank" class="cert-view-btn">
+        <i data-lucide="eye"></i>
+        View
+    </a>
+    <!-- DOWNLOAD -->
+    <a href="assets/certification/Python Course Completion Certificate.pdf" download="Code_Python_Naga_Kumar.pdf" class="cert-download-btn">
+        <i data-lucide="download"></i>
+        Download
+    </a>
+    </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Additional certificates can be added here - unlimited -->
+        
+    </div>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About</h4>
+                <p>Ch. Naga Venkata Kumar is a creative video editor and responsive web designer who crafts engaging visual stories and user-friendly websites, bringing strong leadership, responsibility, and continuous learning into every project.
+</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_kumar___777" target="_blank" rel="noopener noreferrer"><i data-lucide="instagram"></i></a>
+                    <a href="https://youtube.com/@yourchannel" target="_blank" rel="noopener noreferrer"><i data-lucide="youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/chembeti-naga-venkata-kumar-018344367/" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="our-works.html">Our Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Expertise</h4>
+                <ul>
+                    <li><a href="contact.html">Software Development</a></li>
+                    <li><a href="contact.html">Web Design</a></li>
+                    <li><a href="contact.html">Video Editing</a></li>
+                    <li><a href="contact.html">Poster Design</a></li>
+                    <li><a href="contact.html">UI/UX Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-list">
+                    <li><i data-lucide="phone"></i><a href="tel:+916281451401">+91 6281451401</a></li>
+                    <li><i data-lucide="mail"></i><a href="mailto:nagavenkatakumar1401@gmail.com">nagavenkatakumar1401@gmail.com</a></li>
+                    <li><i data-lucide="map-pin"></i><span>Andhra Pradesh, India</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Naga Venkata Kumar © 2026 All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
