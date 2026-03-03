@@ -90,13 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========================================
     // MOBILE MENU TOGGLE
     // ========================================
-    window.toggleMenu = () => {
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (mobileMenu) {
-            mobileMenu.classList.toggle('hidden');
-            lucide.createIcons();
-        }
-    };
+ window.toggleMenu = () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu) {
+        mobileMenu.classList.toggle('show');
+        document.body.classList.toggle('menu-open');
+        lucide.createIcons();
+    }
+};
     
     // ========================================
     // SMOOTH SCROLL
@@ -114,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 
                 const mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                if (mobileMenu && !mobileMenu.classList.contains('show')) {
                     toggleMenu();
                 }
                 
@@ -165,13 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
     
-    // ========================================
-    // LOAD MORE WORKS
-    // ========================================
-    window.loadMoreWorks = () => {
-        // This can be expanded to load more content dynamically
-        alert('More projects coming soon! This portfolio is designed to handle unlimited projects.');
-    };
     
     // ========================================
     // LIGHTBOX
@@ -180,13 +174,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = element.parentElement.querySelector('img');
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
-        const downloadLink = document.getElementById('download-img');
         const lightboxTitle = document.getElementById('lightbox-title');
         const lightboxDesc = document.getElementById('lightbox-description');
         
         if (img && lightbox && lightboxImg) {
             lightboxImg.src = img.src;
-            if (downloadLink) downloadLink.href = img.src;
+            
             
             // Get work details
             const workDetails = element.querySelector('.work-details');
@@ -498,4 +491,64 @@ document.addEventListener("click",function(e){
     if(e.target===modal){
         closeAboutModal();
     }
+});
+
+// ========================================
+// SHOW / HIDE BACK TO TOP BUTTON
+// ========================================
+const backToTopBtn = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+
+    if(!backToTopBtn) return;
+
+    if(window.scrollY > 350){
+        backToTopBtn.classList.add('show');
+    }else{
+        backToTopBtn.classList.remove('show');
+    }
+setTimeout(() => lucide.createIcons(), 200);
+});
+
+// thumbnail to video play
+document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+
+    const thumbnail = wrapper.querySelector('.video-thumbnail');
+    const playBtn = wrapper.querySelector('.video-play-btn');
+    const video = wrapper.querySelector('video');
+
+    function playVideo(){
+        thumbnail.style.display = "none";
+        playBtn.style.display = "none";
+        video.style.display = "block";
+        video.play();
+    }
+
+    thumbnail.addEventListener('click', playVideo);
+    playBtn.addEventListener('click', playVideo);
+
+});
+
+// ===============================
+// REEL STYLE AUTOPLAY ON HOVER
+// ===============================
+
+document.querySelectorAll('.video-item').forEach(item => {
+
+    const previewVideo = item.querySelector('.video-preview');
+
+    item.addEventListener('mouseenter', () => {
+        if (previewVideo) {
+            previewVideo.currentTime = 0;
+            previewVideo.play();
+        }
+    });
+
+    item.addEventListener('mouseleave', () => {
+        if (previewVideo) {
+            previewVideo.pause();
+            previewVideo.currentTime = 0;
+        }
+    });
+
 });

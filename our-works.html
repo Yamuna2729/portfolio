@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
-    <title>Naga Venkata Kumar</title>
+    <title>Naga Venkata Kumar | Our Works</title>
 
     <meta name="description" content="Explore the creative portfolio of Naga Venkata Kumar – software projects, web designs, cinematic edits, posters, UI/UX, and professional design works.">
     <meta name="keywords" content="portfolio, projects, web design, video editing, poster design, software development, UI/UX design">
@@ -48,7 +48,7 @@
         </button>
     </div>
 
-    <div id="mobile-menu" class="mobile-menu hidden">
+    <div id="mobile-menu" class="mobile-menu">
         <button class="mobile-menu-close" onclick="toggleMenu()">
     <i data-lucide="x"></i>
 </button>
@@ -58,6 +58,30 @@
         <a href="our-works.html">Our Works</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
+                <!-- SOCIAL SECTION -->
+<div class="mobile-social">
+    <p>FIND WITH ME</p>
+
+    <div class="mobile-social-icons">
+
+        <a href="https://www.facebook.com/" target="_blank">
+            <i data-lucide="facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/_kumar___777" target="_blank">
+            <i data-lucide="instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/chembeti-naga-venkata-kumar-018344367/" target="_blank">
+            <i data-lucide="linkedin"></i>
+        </a>
+
+        <a href="https://youtube.com/" target="_blank">
+            <i data-lucide="youtube"></i>
+        </a>
+
+    </div>
+</div>
     </div>
 </nav>
 
@@ -73,9 +97,9 @@
 <section class="works-filter-section">
     <div class="filter-container">
         <button class="filter-btn active" onclick="filterWorks('all')">All Projects</button>
-        <button class="filter-btn" onclick="filterWorks('web')">Web Design</button>
         <button class="filter-btn" onclick="filterWorks('video')">Video Editing</button>
         <button class="filter-btn" onclick="filterWorks('design')">Poster Design</button>
+        <button class="filter-btn" onclick="filterWorks('web')">Web Design</button>
         <button class="filter-btn" onclick="filterWorks('ui')">UI/UX</button>
         <button class="filter-btn" onclick="filterWorks('software')">Software</button>
     </div>
@@ -86,7 +110,7 @@
     <div class="works-grid">
         <!-- Video Editing Works -->
         <div class="work-item" data-category="video">
-            <img src="assets/" alt="Cinematic Video Edit Project 1" loading="lazy">
+            <img src="assets/videos/ani 5.mp4" alt="Cinematic Video Edit Project 1" loading="lazy">
             <div class="work-overlay" onclick="openLightbox(this)">
                 <div class="work-details">
                     <h3>Cinematic Edit</h3>
@@ -95,6 +119,7 @@
                 </div>
             </div>
         </div>
+        
 
         <div class="work-item" data-category="design">
             <img src="assets/g2.jpg" alt="Creative Poster Design 1" loading="lazy">
@@ -265,13 +290,7 @@
         <!-- You can add unlimited more items here -->
     </div>
 
-    <!-- Load More Button -->
-    <div class="load-more-container">
-        <button class="btn-primary" onclick="loadMoreWorks()">
-            <i data-lucide="plus-circle"></i>
-            Load More Projects
-        </button>
-    </div>
+
 </section>
 
 <!-- Lightbox -->
@@ -284,13 +303,12 @@
         <h3 id="lightbox-title"></h3>
         <p id="lightbox-description"></p>
     </div>
-    <a id="download-img" class="lightbox-download" href="#" download>
-        <i data-lucide="download"></i>
-        Download
-    </a>
 </div>
 
-
+<!-- Back To Top Button -->
+<button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+    <i data-lucide="arrow-up"></i>
+</button>
 
 <!-- Footer -->
 <footer class="footer">
@@ -314,6 +332,7 @@
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="our-works.html">Our Works</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
