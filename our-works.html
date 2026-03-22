@@ -96,12 +96,12 @@
 <!-- Filter Tabs -->
 <section class="works-filter-section">
     <div class="filter-container">
-        <button class="filter-btn active" onclick="filterWorks('all')">All Projects</button>
-        <button class="filter-btn" onclick="filterWorks('video')">Video Editing</button>
-        <button class="filter-btn" onclick="filterWorks('design')">Poster Design</button>
-        <button class="filter-btn" onclick="filterWorks('web')">Web Design</button>
-        <button class="filter-btn" onclick="filterWorks('ui')">UI/UX</button>
-        <button class="filter-btn" onclick="filterWorks('software')">Software</button>
+  <button class="filter-btn active" onclick="filterWorks('all',this)">All Projects</button>
+    <button class="filter-btn" onclick="filterWorks('video',this)">Video Editing</button>
+    <button class="filter-btn" onclick="filterWorks('design',this)">Poster Design</button>
+    <button class="filter-btn" onclick="filterWorks('web',this)">Web Design</button>
+    <button class="filter-btn" onclick="filterWorks('ui',this)">UI/UX</button>
+    <button class="filter-btn" onclick="filterWorks('software',this)">Software</button>
     </div>
 </section>
 
@@ -109,16 +109,35 @@
 <section class="works-grid-section">
     <div class="works-grid">
         <!-- Video Editing Works -->
-        <div class="work-item" data-category="video">
-            <img src="assets/videos/ani 5.mp4" alt="Cinematic Video Edit Project 1" loading="lazy">
-            <div class="work-overlay" onclick="openLightbox(this)">
-                <div class="work-details">
-                    <h3>Cinematic Edit</h3>
-                    <p>Professional Video Editing</p>
-                    <i data-lucide="zoom-in"></i>
+                    <div class="work-item" data-category="video">
+
+                <div class="video-wrapper">
+
+                <img src="assets/thumbnails/ani5.jpg" 
+                class="video-thumbnail"
+                alt="Cinematic Edit">
+
+                <div class="video-play-btn">
+                ▶
                 </div>
-            </div>
-        </div>
+
+                <video 
+                class="smart-video"
+                src="assets/videos/ani-5.mp4"
+                loop
+                playsinline
+                preload="metadata"
+                muted
+                controls
+                controlsList="nodownload noplaybackrate">
+                </video>
+
+                </div>
+                <div class="work-overlay" onclick="openLightbox(this)">
+                    
+                </div>
+
+                </div>
         
 
         <div class="work-item" data-category="design">
@@ -154,16 +173,39 @@
             </div>
         </div>
 
-        <div class="work-item" data-category="video">
-            <img src="assets/g5.jpg" alt="Motion Graphics Project" loading="lazy">
-            <div class="work-overlay" onclick="openLightbox(this)">
-                <div class="work-details">
-                    <h3>Motion Graphics</h3>
-                    <p>After Effects Animation</p>
-                    <i data-lucide="zoom-in"></i>
+                      <div class="work-item" data-category="video">
+
+                <div class="video-wrapper">
+
+                <img src="assets/thumbnails/ani5.jpg" 
+                class="video-thumbnail"
+                alt="Cinematic Edit">
+
+                <div class="video-play-btn">
+                ▶
                 </div>
-            </div>
-        </div>
+
+                <video 
+                class="smart-video"
+                src="assets/videos/ani-5.mp4"
+                loop
+                playsinline
+                preload="none"
+                muted
+                controls
+                controlsList="nodownload noplaybackrate">
+                </video>
+
+                </div>
+
+                <div class="work-overlay">
+                <div class="work-details">
+                <h3>Cinematic Edit</h3>
+                <p>Professional Video Editing</p>
+                </div>
+                </div>
+
+                </div>
 
         <div class="work-item" data-category="design">
             <img src="assets/g6.jpg" alt="Event Poster Design" loading="lazy">
@@ -199,16 +241,39 @@
         </div>
 
         <!-- Add more projects as needed - unlimited scalability -->
-        <div class="work-item" data-category="video">
-            <img src="assets/slider1.webp" alt="Commercial Video Edit" loading="lazy">
-            <div class="work-overlay" onclick="openLightbox(this)">
-                <div class="work-details">
-                    <h3>Commercial Ad</h3>
-                    <p>Video Production</p>
-                    <i data-lucide="zoom-in"></i>
+                           <div class="work-item" data-category="video">
+
+                <div class="video-wrapper">
+
+                <img src="assets/thumbnails/ani5.jpg" 
+                class="video-thumbnail"
+                alt="Cinematic Edit">
+
+                <div class="video-play-btn">
+                ▶
                 </div>
-            </div>
-        </div>
+
+                <video 
+                class="smart-video"
+                src="assets/videos/ani-5.mp4"
+                loop
+                playsinline
+                preload="none"
+                muted
+                controls
+                controlsList="nodownload noplaybackrate">
+                </video>
+
+                </div>
+
+                <div class="work-overlay">
+                <div class="work-details">
+                <h3>Cinematic Edit</h3>
+                <p>Professional Video Editing</p>
+                </div>
+                </div>
+
+                </div>
 
         <div class="work-item" data-category="web">
             <img src="assets/slider2.webp" alt="E-commerce Website" loading="lazy">
@@ -243,16 +308,39 @@
             </div>
         </div>
 
-        <div class="work-item" data-category="video">
-            <img src="assets/slider5.webp" alt="Documentary Edit" loading="lazy">
-            <div class="work-overlay" onclick="openLightbox(this)">
-                <div class="work-details">
-                    <h3>Documentary</h3>
-                    <p>Video Editing</p>
-                    <i data-lucide="zoom-in"></i>
+                          <div class="work-item" data-category="video">
+
+                <div class="video-wrapper">
+
+                <img src="assets/thumbnails/ani5.jpg" 
+                class="video-thumbnail"
+                alt="Cinematic Edit">
+
+                <div class="video-play-btn">
+                ▶
                 </div>
-            </div>
-        </div>
+
+                <video 
+                class="smart-video"
+                src="assets/videos/ani-5.mp4"
+                loop
+                playsinline
+                preload="none"
+                muted
+                controls
+                controlsList="nodownload noplaybackrate">
+                </video>
+
+                </div>
+
+                <div class="work-overlay">
+                <div class="work-details">
+                <h3>Cinematic Edit</h3>
+                <p>Professional Video Editing</p>
+                </div>
+                </div>
+
+                </div>
 
         <div class="work-item" data-category="software">
             <img src="assets/g1.jpg" alt="Python Application" loading="lazy">
@@ -286,7 +374,39 @@
                 </div>
             </div>
         </div>
+                            <div class="work-item" data-category="video">
 
+                <div class="video-wrapper">
+
+                <img src="assets/thumbnails/ani5.jpg" 
+                class="video-thumbnail"
+                alt="Cinematic Edit">
+
+                <div class="video-play-btn">
+                ▶
+                </div>
+
+                <video 
+                class="smart-video"
+                src="assets/videos/ani-5.mp4"
+                loop
+                playsinline
+                preload="none"
+                muted
+                controls
+                controlsList="nodownload noplaybackrate">
+                </video>
+
+                </div>
+
+                <div class="work-overlay">
+                <div class="work-details">
+                <h3>Cinematic Edit</h3>
+                <p>Professional Video Editing</p>
+                </div>
+                </div>
+
+                </div>
         <!-- You can add unlimited more items here -->
     </div>
 
@@ -366,5 +486,25 @@
 
 
 <script src="script.js"></script>
+<script>
+    function filterWorks(category, btn) {
+    const items = document.querySelectorAll('.work-item');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Active button UI
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    items.forEach(item => {
+        const itemCategory = item.dataset.category?.trim();
+
+        if (category === 'all' || itemCategory === category) {
+            item.style.display = '';   // ✅ IMPORTANT (keeps grid intact)
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+</script>
 </body>
 </html>

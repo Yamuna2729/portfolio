@@ -2537,3 +2537,69 @@ body.menu-open{
     display:none;
 }
 
+.video-wrapper{
+position:relative;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+.video-thumbnail{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:2;
+}
+
+.video-play-btn{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:40px;
+background:rgba(0,0,0,0.6);
+color:white;
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:3;
+cursor:pointer;
+}
+
+.smart-video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+.work-card{
+will-change: transform;
+}
+.work-item{
+transition: all .4s ease;
+}
+.work-item{
+opacity:1;
+transform:scale(1);
+transition:all .4s ease;
+}
+
+.work-item.hide{
+opacity:0;
+transform:scale(.8);
+pointer-events:none;
+position:absolute;
+}
+
+.works-grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+gap:2rem;
+}
+
+.hide {
+    display: none !important;
+}

@@ -140,32 +140,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========================================
     // WORKS FILTER FUNCTIONALITY
     // ========================================
-    window.filterWorks = (category) => {
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const workItems = document.querySelectorAll('.work-item');
-        
-        // Update active button
-        filterBtns.forEach(btn => btn.classList.remove('active'));
-        event.target.classList.add('active');
-        
-        // Filter works
-        workItems.forEach(item => {
-            if (category === 'all' || item.dataset.category === category) {
-                item.style.display = 'block';
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'scale(1)';
-                }, 10);
-            } else {
-                item.style.opacity = '0';
-                item.style.transform = 'scale(0.8)';
-                setTimeout(() => {
-                    item.style.display = 'none';
-                }, 300);
-            }
-        });
-    };
-    
+window.filterWorks = (category, btn) => {
+
+const items = document.querySelectorAll(".work-item");
+const buttons = document.querySelectorAll(".filter-btn");
+
+buttons.forEach(b => b.classList.remove("active"));
+if(btn) btn.classList.add("active");
+
+items.forEach(item => {
+
+const itemCategory = item.dataset.category;
+
+if(category === "all" || itemCategory === category){
+item.classList.remove("hide");
+}else{
+item.classList.add("hide");
+}
+
+});
+
+};
+            
     
     // ========================================
     // LIGHTBOX
@@ -423,12 +419,7 @@ window.addEventListener('load', () => {
         history.scrollRestoration = 'manual';
     }
     
-    // ========================================
-    // REINITIALIZE ICONS PERIODICALLY
-    // ========================================
-    setInterval(() => {
-        lucide.createIcons();
-    }, 3000);
+
     
     // ========================================
     // CONSOLE MESSAGE
@@ -550,5 +541,20 @@ document.querySelectorAll('.video-item').forEach(item => {
             previewVideo.currentTime = 0;
         }
     });
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const carousel = document.querySelector(".works-track");
+
+if(carousel){
+carousel.style.animationPlayState = "paused";
+
+setTimeout(()=>{
+carousel.style.animationPlayState = "running";
+},1000);
+
+}
 
 });
